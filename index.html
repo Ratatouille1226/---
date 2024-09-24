@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Игра на угадывание чисел</h1>
+
+    <p>Мы выбрали случайное число от 1 до 100. Посмотрим, сможете ли вы угадать его за 10 ходов или меньше. Мы сообщим вам, была ли ваша догадка слишком высокой или слишком низкой.</p>
+
+    <div class="form">
+      <label for="guessField">Выскажите предположение: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Отправить предположение" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>
